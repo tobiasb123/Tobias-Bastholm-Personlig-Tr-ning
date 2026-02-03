@@ -7,10 +7,6 @@
     --primary-color: #ffc06e;
     --secondary-color: #8D8DFF;
     --color-1: #F9F6F3;
-    --color-2: #F3F7F9;
-    --color-3: #F6F3F9;
-    --color-4: #f9f6f1;
-    --color-5: #f9f4f1;
 }
 
 * {
@@ -233,6 +229,8 @@ form {
         textarea {
             resize: none;
             min-height: 100px;
+
+            font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
     }
 
@@ -252,6 +250,8 @@ form {
             cursor: pointer;
             transition: 0.3s;
 
+            font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
             &:hover {
                 background-color: #4D4DFF;
             }
@@ -260,5 +260,21 @@ form {
 }
 
 section#Kontakt {
-    background-color: var(--color-4);
+    background-color: var(--color-1);
+}
+
+details {
+    margin-top: 1em;
+    background-color: wheat;
+    border-radius: 1em;
+}
+
+details summary {
+    padding: 1em;
+    font-size: 1.75em;
+    font-family: Merriweather, Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+details p {
+    padding: 0 2em 2em 2em;
 }
