@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tobias Bastholm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Tobias Bastholm</a></li>
+                <li><a href="#om-mig">Om Mig</a></li>
+                <li><a href="#Kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="flex-container">
+            <img height="400px" width="300px" src="images/Forbillede.jpeg">
+            <div class="text-container">
+                <h1>Hej!</h1>
+                <p>Jeg hedder Tobias Bastholm. Jeg er en personlig træner som tager ære i alt hvad jeg laver, og som gør alt hvad jeg kan for at tilfredstille alle mine kunder.</p>
+                <a href="#om-mig" class="cta-button">Om mig</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="flex-container">
+            <div class="text-container">
+                <h2>Hvad kan jeg hjælpe med?</h2>
+                <p>Jeg kan tilbyde personlig træning, kostvejledning, motivations samtale samt gratis indledende samtale. 
+                    Du har mulighed for at få lavet et hjemmetræningsprogram eller et program du kan lave i et fitness center.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="om-mig">
+        <h2>Om mig</h2>
+        <p>Jeg er en meget passioneret person som går meget op i alt jeg laver. Jeg har arbejdet med personlig træning i 3 år og har selv trænet i 5 - 6 år. 
+            Jeg har haft 4 tidligere kunder som alle har været meget tilfredse med deres resultater. 
+        </p>
+    </section>
+
+    <section id="tidligere-kunder">
+        <h3>Tidligere Kunder</h3>
+        <div class="grid-container-kunder">
+            <div class="tidligere-kunde">
+                <img src="images/Forbillede.jpeg">
+                <p>Super god træner! Hjalp mig med en kostplan og træningsprogram!</p>
+            </div>
+            <div class="tidligere-kunde">
+                <img src="images/Forbillede.jpeg">
+                <p>Super god træner! Hjalp mig med en kostplan og træningsprogram!</p>
+            </div>
+            <div class="tidligere-kunde">
+                <img src="images/Forbillede.jpeg">
+                <p>Super god træner! Hjalp mig med en kostplan og træningsprogram!</p>
+            </div>
+            <div class="tidligere-kunde">
+                <img src="images/Forbillede.jpeg">
+                <p>Super god træner! Hjalp mig med en kostplan og træningsprogram!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Kontakt">
+        <div class="Kontakt-container">
+            <h3>Kontakt mig</h3>
+            <p>Ud fyld formen herunder for at komme i kontakt med mig. Jeg prøver at vende tilbage til dig inden for 48 timer.</p>
+            
+            <form action="https://formspree.io/f/xkozqowa" method="post">
+                <div class="form-group">
+                    <label for="firstname">Fornavn*</label>
+                    <input 
+                        type="text" 
+                        name="firstname" 
+                        id="firstname" 
+                        required 
+                        class="form-element"
+                        placeholder="Jane" />
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Efternavn*</label>
+                    <input 
+                        type="text" 
+                        name="lastname" 
+                        id="lastname" 
+                        required 
+                        class="form-element"
+                        placeholder="Doe" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email adresse*</label>
+                    <input 
+                        type="email" 
+                        name="email" 
+                        id="email" 
+                        required 
+                        class="form-element"
+                        placeholder="jane.doe@example.com" />
+                </div>
+                <div class="form-group">
+                    <label for="company">Firma</label>
+                    <input 
+                        type="text" 
+                        name="company" 
+                        id="company" 
+                        class="form-element"
+                        placeholder="jane.doe@example.com" />
+                </div>
+                <div class="form-group full">
+                    <label for="massage">Hvad leder du efter?</label>
+                    <textarea 
+                        name="message" 
+                        id="message" 
+                        class="form-element" 
+                        placeholder="Jeg ønsker..."></textarea>
+                </div>
+                <div class="submit-group">
+                    <input type="submit" value="SEND BESKED">
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+    <footer>
+        <a href="#om-mig">Om mig</a>
+        <a href="#Kontakt">Kontakt</a>
+    </footer>
+
+</body>
+</html>
