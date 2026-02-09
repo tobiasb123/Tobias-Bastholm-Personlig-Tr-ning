@@ -154,6 +154,17 @@ footer a:hover {
     }
 }
 
+@media(max-width: 560px) {
+    nav li {
+        display: none;
+    }
+
+    nav li:first-child,
+    nav li:last-child {
+        display: block;
+    }
+}
+
 h3 {
     font-family: Merriweather, Poppins;
     font-size: 2rem;
