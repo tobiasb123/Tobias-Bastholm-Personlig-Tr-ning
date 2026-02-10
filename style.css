@@ -8,6 +8,10 @@
     --primary-color: #ffc06e;
     --secondary-color: #8D8DFF;
     --color-1: #ccbfb1;
+
+    --side-bar-color-1: #0f1016;
+    --side-bar-text-color: #f0f0f0;
+    --side-bar-accent-color: #006aff;
 }
 
 * {
@@ -31,33 +35,110 @@ h1, h2, h3 {
 }
 
 nav {
-    margin: 1em auto 3em auto;
-    width: min(1000px, 100%);
-}
-
-nav ul {
+    height: 60px;
+    background-color: var(--side-bar-color-1);
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    list-style-type: none;
-    gap: 2em;
 }
 
-nav li:first-child {
-    margin-right: auto;
-    font-family: Merriweather, Poppins;
-    font-weight: bold;
+.links-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 nav a {
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--side-bar-text-color);
+
+    &:hover {
+        background-color: var(--side-bar-accent-color);
+    }
 }
 
-nav a:hover {
-    text-decoration: underline;
+nav .home-link {
+    margin-right: auto;
 }
 
-header, section {
+nav svg {
+    fill: var(--side-bar-text-color);
+}
+#sidebar-active {
+    display: none;
+}
+.open-sidebar-button, .close-sidebar-button {
+    display: none;
+}
+@media(min-width: 800px) {
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+@media(max-width: 800px) {
+    nav {
+        width: 72px;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+    .links-container {
+        flex-direction: column;
+        align-items: flex-start;
+
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 300px;
+
+        background-color: var(--side-bar-color-1);
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+        transition: .75s ease-out;
+    }
+    nav a {
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+    .open-sidebar-button, .close-sidebar-button {
+        padding: 20px;
+        display: block;
+    }
+    #sidebar-active:checked ~ .links-container {
+        right: 0;
+    }
+    #sidebar-active:checked ~ #overlay {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+}
+
+header {
+    margin: 4em auto;
+    width: min(75em, 100%);
+    background-color: var(--color-1);
+    padding: min(2em, 15%);
+    border-radius: 1em;
+    box-shadow: 0 0.15em 0.15em 0.15em #2b2017;
+}
+
+section {
     margin: 2em auto;
     width: min(75em, 100%);
     background-color: var(--color-1);
