@@ -1,161 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tobias Bastholm</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TobiasFitness/Forside</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <nav>
-            <input type="checkbox" id="sidebar-active">
-            <label for="sidebar-active" class="open-sidebar-button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-            </label>
-            
-            <label id="overlay" for="sidebar-active"></label>
+      <input type="checkbox" id="sidebar-active" />
+      <label for="sidebar-active" class="open-sidebar-button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="32px"
+          viewBox="0 -960 960 960"
+          width="32px"
+          fill="#e3e3e3"
+        >
+          <path
+            d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+          />
+        </svg>
+      </label>
 
-            <div class="links-container">
-                <label for="sidebar-active" class="close-sidebar-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-                </label>
+      <label id="overlay" for="sidebar-active"></label>
 
-                <a class="home-link" href="index.html">Tobias Bastholm</a>
-                <a href="#min-hjælp">Hvad kan jeg</a>
-                <a href="#om-mig">Om Mig</a>
-                <a href="#tidligere-kunder">Tidligere Kunder</a>
-                <a href="#faq">FAQ</a>
-                <a href="#Kontakt">Kontakt</a>
-            </div>
-        </nav>
+      <div class="links-container">
+        <label for="sidebar-active" class="close-sidebar-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="32px"
+            viewBox="0 -960 960 960"
+            width="32px"
+            fill="#e3e3e3"
+          >
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+            />
+          </svg>
+        </label>
+
+        <a class="home-link" href="index.html">Tobias Bastholm</a>
+        <a href="priser.html">Priser</a>
+        <a class="contact-link" href="contact.html" onclick="kontakt(``)">
+          kontakt
+        </a>
+      </div>
+    </nav>
 
     <header>
-        <div class="flex-container">
-            <img height="400px" width="300px" src="images/Forbillede.jpeg">
-            <div class="text-container">
-                <h1>Hej!</h1>
-                <p>Mit navn er Tobias Bastholm, og jeg er personlig træner med hjertet i mit arbejde. Jeg går helhjertet ind i hver enkelt forløb og gør mit yderste for, at mine kunder føler sig set, motiveret og tilfredse.</p>
-                <a href="#om-mig" class="cta-button">Om mig</a>
-                <a href="#tidligere-kunder" class="cta-button">Tidligere Kunder</a>
-            </div>
+      <div class="flex-container">
+        <img height="400px" width="300px" src="images/Forbillede.jpeg" />
+        <div class="text-container">
+          <h1>Hej!</h1>
+          <p>
+            Mit navn er Tobias Bastholm, og jeg er personlig træner med hjertet
+            i mit arbejde. Jeg går helhjertet ind i hver enkelt forløb og gør
+            mit yderste for, at mine kunder føler sig set, motiveret og
+            tilfredse.
+          </p>
+          <a href="#om-mig" class="cta-button">Om mig</a>
+          <a href="#tidligere-kunder" class="cta-button">Tidligere Kunder</a>
         </div>
+      </div>
     </header>
 
     <section id="min-hjælp">
-        <div class="flex-container">
-            <div class="text-container">
-                <h2>Hvad kan jeg hjælpe med?</h2>
-                <p>Jeg hjælper dig hele vejen - med personlig træning, kostvejledning og motiverende samtaler, der skaber varige resultater. Du får en indledende samtale, og dit træningsprogram bliver tilpasset dig, uanset om du træner derhjemme eller i fitnesscenter.</p>
-            </div>
+      <div class="flex-container">
+        <div class="text-container">
+          <h2>Hvad kan jeg hjælpe med?</h2>
+          <p>
+            Jeg hjælper dig hele vejen - med personlig træning, kostvejledning
+            og motiverende samtaler, der skaber varige resultater. Du får en
+            indledende samtale, og dit træningsprogram bliver tilpasset dig,
+            uanset om du træner derhjemme eller i fitnesscenter.
+          </p>
         </div>
+      </div>
     </section>
 
     <section id="om-mig">
-        <h2>Om mig</h2>
-        <p>Jeg er drevet af en stor passion for træning og for at hjælpe andre med at nå deres mål. Jeg har gennemført Grundforløb 2 på fitnessuddannelsen og har 3 års erfaring med personlig træning samt 5–6 års egen træning. Det har givet mig en solid forståelse for både kroppen, træning og motivation. Mine tidligere kunder har alle været glade for deres resultater.</p>
+      <h2>Om mig</h2>
+      <p>
+        Jeg er drevet af en stor passion for træning og for at hjælpe andre med
+        at nå deres mål. Jeg har gennemført Grundforløb 2 på fitnessuddannelsen
+        og har 3 års erfaring med personlig træning samt 5–6 års egen træning.
+        Det har givet mig en solid forståelse for både kroppen, træning og
+        motivation.
+      </p>
     </section>
 
     <section id="tidligere-kunder">
-        <h3>Tidligere Kunder</h3>
-        <div class="tidligere-kunde">
-            <img height="400px" width="300px" src="images/Karina_Billede.jpeg">
-            <p><strong>Kvinde 51 år.</strong><br><br>
-                <br><strong>Ondt i ryggen pga. svage rygmuskler.</strong><br>
-                <br>Gennem kompetent, tålmoding og let forståelig træningsvejledning har jeg fået meget mere kontrol over hele min krop og smerterne er væk.<br></p>
-        </div>
-        <div class="tidligere-kunde">
-            <img height="400px" width="300px" src="images/Emil_Billede.jpeg">
-            <p><strong>Mand 25 år.</strong><br><br>
-                <br><strong>Blive stærkere samt tabe noget fedt.</strong><br>
-                <br>Gennem nogle træningssessioner fik jeg mere og mere styr på min træning og hvad jeg skulle fremad rettet for at tabe mig.<br></p>
-        </div>
-    </section>
-
-    <section id="faq">
-        <h2>Hyppige Spørgsmål</h2>
-        <details>
-            <summary>Hvor meget koster det?</summary>
-            <p>Din første session koster 600 kr. og danner fundamentet for dit videre forløb. Herefter er prisen 400 kr. pr. session.</p>
-        </details>
-        <details>
-            <summary>Hvad har jeg mulighed for at få?</summary>
-            <p>Jeg tilbyder personlig træning, kostvejledning, motiverende samtaler og en træningsplan tilpasset dine mål og din hverdag.</p>
-        </details>
-        <details>
-            <summary>Hvor kan jeg tilbyde service?</summary>
-            <p>Jeg tilbyder personlig service inden for 50 km af Holbæk og mulighed for online kostvejledning og motiverende samtaler.</p>
-        </details>
-    </section>
-
-    <section id="Kontakt">
-        <div class="Kontakt-container">
-            <h3>Kontakt mig</h3>
-            <p>Ud fyld formen herunder for at komme i kontakt med mig og så vender jeg tilbage hurtigst muligt.</p>
-            
-            <form action="https://formspree.io/f/xkozqowa" method="post">
-                <div class="form-group">
-                    <label for="firstname">Fornavn*</label>
-                    <input 
-                        type="text" 
-                        name="firstname" 
-                        id="firstname" 
-                        required 
-                        class="form-element"
-                        placeholder="Jane" />
-                </div>
-                <div class="form-group">
-                    <label for="lastname">Efternavn*</label>
-                    <input 
-                        type="text" 
-                        name="lastname" 
-                        id="lastname" 
-                        required 
-                        class="form-element"
-                        placeholder="Doe" />
-                </div>
-                <div class="form-group">
-                    <label for="email">Email adresse*</label>
-                    <input 
-                        type="email" 
-                        name="email" 
-                        id="email" 
-                        required 
-                        class="form-element"
-                        placeholder="jane.doe@example.com" />
-                </div>
-                <div class="form-group">
-                    <label for="company">Firma</label>
-                    <input 
-                        type="text" 
-                        name="company" 
-                        id="company" 
-                        class="form-element"
-                        placeholder="jane.doe@example.com" />
-                </div>
-                <div class="form-group full">
-                    <label for="massage">Hvad leder du efter?</label>
-                    <textarea 
-                        name="message" 
-                        id="message" 
-                        class="form-element" 
-                        placeholder="Jeg ønsker..."></textarea>
-                </div>
-                <div class="submit-group">
-                    <input type="submit" value="SEND BESKED">
-                </div>
-            </form>
-
-        </div>
+      <h3>Tidligere Kunder</h3>
+      <div class="tidligere-kunde">
+        <img height="400px" width="300px" src="images/Karina_Billede.jpeg" />
+        <p>
+          <strong>Kvinde 51 år.</strong><br /><br />
+          <br /><strong>Ondt i ryggen pga. svage rygmuskler.</strong><br />
+          <br />Gennem kompetent, tålmoding og let forståelig træningsvejledning
+          har jeg fået meget mere kontrol over hele min krop og smerterne er
+          væk.<br />
+        </p>
+      </div>
+      <div class="tidligere-kunde">
+        <img height="400px" width="300px" src="images/Emil_Billede.jpeg" />
+        <p>
+          <strong>Mand 25 år.</strong><br /><br />
+          <br /><strong>Blive stærkere samt tabe noget fedt.</strong><br />
+          <br />Gennem nogle træningssessioner fik jeg mere og mere styr på min
+          træning og hvad jeg skulle fremad rettet for at tabe mig.<br />
+        </p>
+      </div>
     </section>
 
     <footer>
-        <a href="#min-hjælp">Min Hjælp</a>
-        <a href="#om-mig">Om mig</a>
-        <a href="#tidligere-kunder">Tidligere Kunder</a>
-        <a href="#faq">FAQ</a>
-        <a href="#Kontakt">Kontakt</a>
+      <a href="#min-hjælp">Min Hjælp</a>
+      <a href="#om-mig">Om mig</a>
+      <a href="#tidligere-kunder">Tidligere Kunder</a>
     </footer>
 
-</body>
-
+    <script src="app.js"></script>
+  </body>
 </html>

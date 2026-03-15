@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TobiasFitness/Priser</title>
+    <link rel="stylesheet" href="priser.css" />
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="sidebar-active" />
+      <label for="sidebar-active" class="open-sidebar-button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="32px"
+          viewBox="0 -960 960 960"
+          width="32px"
+          fill="#e3e3e3"
+        >
+          <path
+            d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+          />
+        </svg>
+      </label>
+
+      <label id="overlay" for="sidebar-active"></label>
+
+      <div class="links-container">
+        <label for="sidebar-active" class="close-sidebar-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="32px"
+            viewBox="0 -960 960 960"
+            width="32px"
+            fill="#e3e3e3"
+          >
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+            />
+          </svg>
+        </label>
+
+        <a class="home-link" href="index.html">Forside</a>
+        <a class="contact-link" href="contact.html" onclick="kontakt(``)">
+          kontakt
+        </a>
+      </div>
+    </nav>
+
+    <section id="priser">
+      <h1>Priser</h1>
+      <div class="muligheder">
+        <div class="mulighed">
+          <h3>Første Konsultation</h3>
+          <p id="Price-tag"><strong>399kr</strong></p>
+          <p id="text">
+            Den første konsultation går ud på at finde ud af hvor du er i dag,
+            hvad du har brug for og hvordan jeg kan hjælpe dig med at nå dine
+            mål.
+          </p>
+        </div>
+
+        <div class="mulighed">
+          <h3>Opfølgende Konsultation</h3>
+          <p id="Price-tag"><strong>149kr</strong></p>
+          <p id="text">
+            I den opfølgende konsultation tager vi et kig på hvordan det går med
+            både det mentale og fysiske i forhold til de ændringer der er blevet
+            lavet. Og om der skal justeres på noget.
+          </p>
+        </div>
+
+        <div class="mulighed">
+          <h3>Første Konsultation - Online</h3>
+          <p id="Price-tag"><strong>299kr</strong></p>
+          <p id="text">
+            Den første konsultation Online har du mulighed for at snakke med mig
+            og telefonen eller teams for at finde ud af hvordan jeg kan hjælpe
+            dig.
+          </p>
+        </div>
+
+        <div class="mulighed">
+          <h3>Opfølgende Konsultation - Online</h3>
+          <p id="Price-tag"><strong>99kr</strong></p>
+          <p id="text">
+            I den opfølgende konsultation Online har du mulighed for at snakke
+            med mig omkring hvordan det går med både det mentale og fysiske i
+            forhold til det ændringer der er blevet lavet. Og om der skal
+            justeres på noget.
+          </p>
+        </div>
+
+        <div class="mulighed">
+          <h3>Personlig Træning</h3>
+          <p id="Price-tag"><strong>349kr</strong></p>
+          <p id="text">
+            Her har du mulighed for at træne sammen med mig, jeg hjælper dig med
+            træningsprogram, træningsplan og din form i alle øvelserne så du får
+            mest muligt ud af din træning.
+          </p>
+        </div>
+
+        <div class="mulighed">
+          <h3>Kostvejledning</h3>
+          <p id="Price-tag"><strong>199kr</strong></p>
+          <p id="text">
+            Her har du mulighed for at sætte dig ned sammen med mig og kigge på
+            din kost. Jeg kan hjælpe dig med at, strukturere din kost, dårlige
+            vaner og hvordan man kan sammensætte en kost plan. Dette kan forgå i
+            person eller online.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
